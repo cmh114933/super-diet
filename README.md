@@ -22,3 +22,23 @@ List all users, can be searched or sorted
 ]
 ```
 ---
+
+### GET /projects
+
+List all projects, can be searched or sorted
+
+**Query Params**
+
+`title` - string, will fuzzy search using `LIKE '%name%'`
+
+**Sample Response**
+
+```
+[
+    {
+        "id": 65,
+        "title": "Project Name",
+    }
+]
+```
+---
